@@ -51,6 +51,7 @@ header {
   font-size: 2rem;
   color: #00a27b !important;
   border: none;
+  margin: 0;
 }
 .fal {
   color: #00a27b;
@@ -162,9 +163,10 @@ ul li {
   color: white;
 }
 .photo {
-  height: 30rem;
+  min-height: 30rem;
   overflow: hidden;
   position: relative;
+  padding: 1rem;
 }
 .photo::before {
   content: "";
@@ -182,17 +184,41 @@ ul li {
 .photo-dektop {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  background-image: url(./assetes/img/022_bg_amadegisafar.svg);
-  background-repeat: no-repeat;
+  min-height: 30rem;
 }
-
-.photo-dektop h2,
-button {
-  margin-top: 6rem;
+.photo-dektop img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.photo-dektop h2 {
+  font-size: 3vw;
+  padding-top: 7rem;
+}
+.photo-dektop button {
+  margin-top: 8rem;
+}
+.photo-dektop p {
+  font-size: 1.4vw;
 }
 @media only screen and (max-width: 767px) {
   .icons::before {
     display: none;
+  }
+  p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  h2,
+  h3 {
+    font-size: 3rem !important;
+  }
+}
+@media screen and (max-width: 1714px) and (min-width: 771px) {
+  .photo-dektop h2 {
+    padding-top: 3rem;
+  }
+  .photo-dektop button {
+    margin-top: 2rem;
   }
 }
