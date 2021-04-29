@@ -320,10 +320,26 @@ footer h4 {
   footer {
     background-color: #005842;
   }
+  footer h4 {
+    font-size: 1.5rem;
+  }
+  footer ul li {
+    font-size: 3vw;
+  }
   .twitter,
   .instagram,
   .telegram {
     position: static;
+    padding: 0;
+  }
+  .twitter img,
+  .instagram img,
+  .telegram img {
+    width: 4rem;
+    height: 4rem;
+  }
+  #Email {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1714px) and (min-width: 771px) {
