@@ -79,7 +79,9 @@ header {
   width: 50rem;
   height: 50rem;
 }
-
+.navbar-desktop ul li {
+  font-size: 2rem;
+}
 ul li {
   list-style: none;
   font-size: 2rem;
@@ -245,6 +247,58 @@ ul li {
   height: 6rem;
   border-radius: 3rem;
 }
+footer {
+  min-height: 21vh;
+  background: url(./assetes/img/025_footer_Bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  position: relative;
+}
+.copyRight {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+}
+.copyRight p {
+  font-size: 0.8vw;
+}
+.copyRight #camel {
+  position: absolute;
+  bottom: 170%;
+}
+.copyRight #bg-dark {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.social-media {
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.twitter {
+  position: absolute;
+  bottom: 40%;
+}
+.instagram {
+  position: absolute;
+  bottom: 24%;
+  left: 25.55%;
+}
+.telegram {
+  position: absolute;
+  bottom: 14%;
+  left: 22%;
+}
+footer h4 {
+  font-size: 1.1vw;
+}
 @media only screen and (max-width: 767px) {
   .icons::before {
     display: none;
@@ -263,6 +317,14 @@ ul li {
   .form {
     display: block !important;
   }
+  footer {
+    background-color: #005842;
+  }
+  .twitter,
+  .instagram,
+  .telegram {
+    position: static;
+  }
 }
 @media screen and (max-width: 1714px) and (min-width: 771px) {
   .photo-dektop h2 {
@@ -270,5 +332,20 @@ ul li {
   }
   .photo-dektop button {
     margin-top: 2rem;
+  }
+  .twitter {
+    margin-bottom: 10rem;
+  }
+  .instagram {
+    margin-bottom: 5rem;
+  }
+  .telegram {
+    margin-bottom: 2rem;
+  }
+  .copyRight #bg-dark {
+    width: 30rem;
+    position: absolute;
+    z-index: -1;
+    right: 0;
   }
 }
