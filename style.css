@@ -181,17 +181,15 @@ ul li {
 }
 .photo-dektop {
   position: relative;
-}
-.photo-dektop::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   background-image: url(./assetes/img/022_bg_amadegisafar.svg);
   background-repeat: no-repeat;
+}
+
+.photo-dektop h2,
+button {
+  margin-top: 6rem;
 }
 @media only screen and (max-width: 767px) {
   .icons::before {
