@@ -1,16 +1,63 @@
 @font-face {
   font-family: Shabnam;
-  src: url("./assetes/fonts/Shabnam.woff") format(Woff);
+  src: url("./assetes/fonts/Shabnam.woff") format("woff");
 }
 /* GLOBAL STYLES */
 html,
 body {
   width: 100%;
   height: 100%;
+  direction: rtl;
+  font-size: 62.5%;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: Shabnam;
+  font-family: Shabnam;
+}
+/* Download button */
+.download-btn {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  background-color: #f57f25;
+  border-radius: 2rem;
+}
+/* Navbar */
+.navbar {
+  background-color: #e0e0e0;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.navbar-toggler,
+.navbar-toggler-icon {
+  font-size: 2rem;
+  color: #00a27b !important;
+  border: none;
+}
+.fal {
+  color: #00a27b;
+}
+/* LOGO */
+.logo {
+  position: relative;
+}
+.logo img {
+  margin: 8rem 6rem 8rem 1rem;
+}
+.logo h3 {
+  color: #00a27b;
+  font-size: 3rem;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(./assetes/img/009_logo_Bg.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  right: -18rem;
+  width: 50rem;
+  height: 50rem;
 }
