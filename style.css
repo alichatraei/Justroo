@@ -201,6 +201,50 @@ ul li {
 .photo-dektop p {
   font-size: 1.4vw;
 }
+.section4 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.gallary {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin: 4rem 0 0 0;
+}
+.cards {
+  flex: 0 0 auto;
+  margin: 0 2rem;
+}
+.cards img,
+.photos img {
+  width: 50rem;
+  height: 25rem;
+  border-radius: 3rem;
+}
+.Email {
+  width: 100%;
+  padding: 10rem 0;
+}
+#Email {
+  width: 50rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  border: none;
+  height: 3rem;
+  padding: 3rem;
+  box-shadow: 1rem 1rem 4rem #ccc;
+}
+.email-btn {
+  margin-top: 4rem;
+}
+.email-btn .download-btn {
+  background-image: linear-gradient(to bottom, #fe8361, #e45326);
+  width: 20rem;
+  height: 6rem;
+  border-radius: 3rem;
+}
 @media only screen and (max-width: 767px) {
   .icons::before {
     display: none;
@@ -212,6 +256,12 @@ ul li {
   h2,
   h3 {
     font-size: 3rem !important;
+  }
+  .Email {
+    background-color: #e2fffa;
+  }
+  .form {
+    display: block !important;
   }
 }
 @media screen and (max-width: 1714px) and (min-width: 771px) {
