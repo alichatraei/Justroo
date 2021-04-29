@@ -16,12 +16,27 @@ body {
   padding: 0;
   font-family: Shabnam;
 }
+/* P, H2  */
+h2 {
+  font-size: 6rem;
+  color: #00a27b;
+}
+p {
+  font-size: 2rem;
+}
+header {
+  min-height: 20vh;
+}
+.underline {
+  border-bottom: 0.4rem solid #00a27b;
+}
 /* Download button */
 .download-btn {
   padding: 0.5rem 2rem;
   font-size: 2rem;
   background-color: #f57f25;
   border-radius: 2rem;
+  color: white;
 }
 /* Navbar */
 .navbar {
@@ -30,6 +45,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
+
 .navbar-toggler,
 .navbar-toggler-icon {
   font-size: 2rem;
@@ -46,7 +62,8 @@ body {
 .logo img {
   margin: 8rem 6rem 8rem 1rem;
 }
-.logo h3 {
+.logo h3,
+.logo-desktop h3 {
   color: #00a27b;
   font-size: 3rem;
 }
@@ -60,4 +77,35 @@ body {
   right: -18rem;
   width: 50rem;
   height: 50rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: 2rem;
+}
+.bg-svg img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 7vw;
+  max-width: 40rem;
+}
+
+.section1 {
+  min-height: 80vh;
+}
+.divider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.divider img {
+  max-width: 100%;
+}
+.divider #second {
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  right: 20rem;
 }

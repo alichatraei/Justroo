@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="w-100">
       <!-- Mobile mode -->
       <div class="d-block d-md-none">
         <nav class="navbar navbar-expand-md navbar-light">
@@ -53,20 +53,87 @@
             <button class="download-btn">دانلود</button>
           </div>
         </nav>
+        <div class="container">
+          <div class="row align-items-center h-100">
+            <div class="logo d-flex justify-content-center align-items-center">
+              <img src="./assetes/img/camel.png" width="100" height="100" />
+              <h3>جاسترو</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="logo d-flex justify-content-center align-items-center">
-            <img src="./assetes/img/camel.png" width="100" height="100" />
+      <!-- DESktop mode -->
+      <div class="bg-svg d-none d-md-block">
+        <img src="./assetes/img/009_logo_Bg.svg" />
+      </div>
+      <div class="w-75 mx-auto d-none d-md-block desktop-header py-5">
+        <div class="row justify-content-between align-items-center no-gutters">
+          <div
+            class="logo-desktop d-flex justify-content-center align-items-center col-md-3"
+          >
+            <img
+              src="./assetes/img/camel.png"
+              class="img-fluid"
+              width="100"
+              height="100"
+            />
             <h3>جاسترو</h3>
           </div>
-          <div class="navbar-desktop d-md-flex d-md-none"></div>
-          <div class="d-md-flex d-none">
+          <div
+            class="navbar-desktop d-md-flex d-md-none justify-content-center align-items-center col-md-6"
+          >
+            <ul
+              class="d-flex justify-content-between align-items-center m-0 w-100"
+            >
+              <li>صفحه اصلی</li>
+              <li>ایده ها</li>
+              <li>ویژگی ها</li>
+              <li>درباره ما</li>
+              <li>همکاری با ما</li>
+              <li>تماس با ما</li>
+            </ul>
+          </div>
+          <div class="d-md-flex d-none col-md-3 d-flex justify-content-end">
             <button class="download-btn">دانلود</button>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="section1">
+        <div class="container-fluid container-md py-3">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-12 col-md d-flex justify-content-start align-items-center flex-column text-justify pt-3"
+            >
+              <h2 class="text-right w-100 pr-4">
+                <span class="underline">بهتر</span> سفر کنید
+              </h2>
+              <p class="mt-3">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md d-flex align-items-center">
+              <img src="./assetes/img/slide2-bg.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="divider">
+          <img src="./assetes/img/bg-wave.png"/>
+          <img src="./assetes/img/bg-wave.png" id="second" />
+        </div>
+      </section>
+    </main>
     <!-- JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
